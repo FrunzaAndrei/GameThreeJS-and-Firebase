@@ -60,7 +60,7 @@ init = () => {
   this.cubePlayer.position.z = 85;
   scene.add(this.cubePlayer);
 
-  let texturePlanStatic = new THREE.TextureLoader().load("road.png");
+  let texturePlanStatic = new THREE.TextureLoader().load("images/road.png");
   texturePlanStatic.wrapS = THREE.RepeatWrapping;
   texturePlanStatic.wrapT = THREE.RepeatWrapping;
   texturePlanStatic.repeat.set(1, 12);
@@ -75,7 +75,7 @@ init = () => {
   planeStatic.scale.set(10, 360, 1);
   scene.add(planeStatic);
 
-  let groundStaticTexture = new THREE.TextureLoader().load("iarba.jpg");
+  let groundStaticTexture = new THREE.TextureLoader().load("images/iarba.jpg");
   groundStaticTexture.wrapS = groundStaticTexture.wrapT = THREE.RepeatWrapping;
   groundStaticTexture.repeat.set(200, 200);
   groundStaticTexture.anisotropy = 16;
@@ -193,8 +193,8 @@ distanceVector = (v1, v2) => {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 makeObstacle = plane => {
-  let texture1 = new THREE.TextureLoader().load("textCube1.jpg");
-  let texture2 = new THREE.TextureLoader().load("text2Cube.jpg");
+  let texture1 = new THREE.TextureLoader().load("images/textCube1.jpg");
+  let texture2 = new THREE.TextureLoader().load("images/text2Cube.jpg");
   let geometry = new THREE.BoxGeometry(0.1, 0.005, 1);
   let material = new THREE.MeshBasicMaterial({
     wireframe: false
@@ -225,7 +225,7 @@ makeObstacle = plane => {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 makeNewPlane = position => {
-  let texture = new THREE.TextureLoader().load("road.png");
+  let texture = new THREE.TextureLoader().load("images/road.png");
   texture.wrapS = THREE.RepeatWrapping;
   texture.wrapT = THREE.RepeatWrapping;
   texture.repeat.set(1, 6);
@@ -244,7 +244,7 @@ makeNewPlane = position => {
 };
 
 makeNewGround = position => {
-  let groundTexture = new THREE.TextureLoader().load("iarba.jpg");
+  let groundTexture = new THREE.TextureLoader().load("images/iarba.jpg");
   groundTexture.wrapS = groundTexture.wrapT = THREE.RepeatWrapping;
   groundTexture.repeat.set(200, 200);
   groundTexture.anisotropy = 16;
@@ -352,7 +352,7 @@ colisionObject = (scene, cubePl) => {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 afterColision = (scene, cubePl) => {
-  let groundStaticTexture = new THREE.TextureLoader().load("carbuni.jpg");
+  let groundStaticTexture = new THREE.TextureLoader().load("images/carbuni.jpg");
   groundStaticTexture.wrapS = groundStaticTexture.wrapT = THREE.RepeatWrapping;
   groundStaticTexture.repeat.set(1000, 1000);
   groundStaticTexture.anisotropy = 16;
@@ -431,7 +431,7 @@ showScore = () => {
   tbl.id = "storageTable";
   if (tableScore.length > 0) {
     for (var i = 0; i < tableScore.length; i++) {
-      if ( i<17 ){
+      if ( i<12 ){
         // console.log("afisare if", tableScore[i].name, tableScore[i].score);
            var row = document.createElement("tr");
           var key = document.createElement("td");
