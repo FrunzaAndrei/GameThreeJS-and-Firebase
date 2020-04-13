@@ -173,6 +173,10 @@ canvas {
     border: none;
 }
 
+.titleTopPlayers{
+  margin-left:10px;
+  font-weight: bold;
+}
 
 @media screen and (max-width:1400px){
   #inputSizeGameOver{
