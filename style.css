@@ -176,7 +176,8 @@ canvas {
 
 #storage>table {
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;  
+  text-align: justify;
 }
 
 #iexit {

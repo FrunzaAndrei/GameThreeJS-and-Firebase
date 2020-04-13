@@ -436,8 +436,8 @@ showScore = () => {
            var row = document.createElement("tr");
           var key = document.createElement("td");
           var val = document.createElement("td");
-          key.innerText = (i+1)+' . '+tableScore[i].name + ' -  ' + ' ' ;
-          val.innerText = tableScore[i].score;
+          key.innerText = (i+1)+' . '+tableScore[i].name + ' ' ;
+          val.innerText = ' -  ' + ' ' + tableScore[i].score;
           row.appendChild(key);
           row.appendChild(val);
           tbl.appendChild(row);
